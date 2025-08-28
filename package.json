@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "prepare": "husky && husky install",
+    "lint:eslint": "eslint .",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "echo \"No tests defined\" && exit 0"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
