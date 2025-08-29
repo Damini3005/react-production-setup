@@ -1,5 +1,5 @@
 function App() {
-    return <div>react production setup</div>
+    return <div className="bg-amber-500">react production setup</div>
 }
 // console.log("");
 export default App
