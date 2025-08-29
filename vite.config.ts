@@ -3,10 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 // import { normalizeModuleId } from "vite/module-runner";
 
-// https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react(), tailwindcss()],
-// });
 type TMode = "development" | "production";
 interface AppEnv {
   PORT: string;
@@ -25,12 +21,12 @@ const validateEnv = (envMode: TMode, env: AppEnv) => {
   }
 };
 
-const normalizePort = (port: string) => {
-  const normalizePort = parseInt(port);
-  if (isNaN(normalizePort)) {
+const normalizedPort = (port: string) => {
+  const normalizedPort = parseInt(port);
+  if (isNaN(normalizedPort)) {
     throw new Error(`Invalid port value: ${port}`);
   }
-  return normalizePort;
+  return normalizedPort;
 };
 export default defineConfig(({ mode }) => {
   const envMode = mode as TMode;
@@ -38,7 +34,7 @@ export default defineConfig(({ mode }) => {
 
   validateEnv(envMode, env);
 
-  const port = normalizePort(env.PORT);
+  const port = normalizedPort(env.PORT);
   const config: ServerOptions = {
     port,
     open: true,
