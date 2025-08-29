@@ -1,14 +1,5 @@
-
-
 function App() {
-  
-
-  return (
-    <div>react production setup
-
-    </div>
-  )
-
+    return <div>react production setup</div>
 }
-console.log("")
+// console.log("");
 export default App
