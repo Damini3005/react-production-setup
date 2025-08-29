@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "commitlint.config.js"]
+  "include": ["src", "commitlint.config.cjs", "lint-staged.config.cjs"]
 }
