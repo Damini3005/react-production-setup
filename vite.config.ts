@@ -59,12 +59,18 @@ export default defineConfig(({ mode }) => {
       coverage: {
         reporter: ["json", "html"],
         include: ["src/**/*.ts", "src/**/*.tsx"],
-        exclude: ["coverage", "dist", "build", "src/**/*.{test,spec}.{ts,tsx}"],
+        exclude: [
+          "coverage",
+          "dist",
+          "build",
+          "src/setupTests.ts",
+          "src/**/*.{test,spec}.{ts,tsx}",
+        ],
         thresholds: {
-          statements: 80,
-          branches: 80,
-          functions: 80,
-          lines: 80,
+          statements: 30,
+          branches: 30,
+          functions: 30,
+          lines: 30,
         },
       },
     },

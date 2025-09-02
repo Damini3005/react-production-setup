@@ -11,6 +11,7 @@
     "lint:stylelint": "stylelint **/*.css",
     "dev": "vite --mode development",
     "test": "vitest --mode test",
+    "test:coverage": "vitest run --coverage --mode test",
     "build": "tsc -b && vite build --mode production",
     "lint": "eslint .",
     "preview": "vite preview --mode production"
