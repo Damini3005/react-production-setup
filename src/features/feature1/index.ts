@@ -1,1 +1,1 @@
-export { default as Featur1Page } from './Featur1Page'
+export { default as Featur1Page } from './Feature1Page'
